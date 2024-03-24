@@ -11,9 +11,6 @@
               background-color: rgba(0, 0, 0, 0.909);
               backdrop-filter: blur(3px);
               padding: 14em 0;
-              
-              /* display: flex; 
-              justify-content: center; */
                 /* 14 em means vertical padding of font size * 16
                 0  is for horizontal padding */
             }
@@ -71,11 +68,8 @@
            alert("Invalid email");
        return false;
        }
-        
-               
-           return true;
+        return true;
         }
-        
            </script>
         <title> DETAILS </title>
     </head>
@@ -83,21 +77,21 @@
 <body>
     <center>
         <!-- POST METHOD IS USED TO SEND THE DATA TO THE SERVER I.E TO THE URL SUCCESS.HTML -->
-      <form action="success.html" method = "POST"Submit="return validate()">
+      <form name="frm" action="success.html" method = "POST" onSubmit="return validate();">
     <h1>DETAILS PAGE</h1>
 	<table style="font-family:'Times New Roman', Times, serif;font-weight: 800;">
-<tr><td>FIRST NAME:</td> 	<td><input type="text" ></td></tr>
-<tr><td>LAST NAME: </td> 	<td><input type="text"></td></tr>
-<tr><td>MOBILE: </td> 		<td><input type="number"></td></tr>
-<tr><td>PASSWORD: </td> 	<td><input type="password"></td></tr>
-<tr><td>EMAIL: </td> 		<td><input type="email"></td></tr>
-<tr><td>GENDER:</td>        <td>Male:<input type="radio" name="gen" value="male"> 
-                            Female:<input type="radio" name="gen" value="female"> </td></tr>
+<tr><td>FIRST NAME:</td> 	<td><input type="text" name="fname" ></td></tr>
+<tr><td>LAST NAME: </td> 	<td><input type="text" name="lname"></td></tr>
+<tr><td>MOBILE: </td> 		<td><input type="number" name="phone" ></td></tr>
+<tr><td>PASSWORD: </td> 	<td><input type="password" name="pwd"></td></tr>
+<tr><td>EMAIL: </td> 		<td><input type="email" name="mailid"></td></tr>
+<tr><td>GENDER:</td>        <td>Male:<input type="radio" name="gender" value="male"> 
+                            Female:<input type="radio" name="gender" value="female"> </td></tr>
 <tr><td>FILE:</td>          <td><input type="file"></td> </tr>
 <tr><td>DOB: </td> 		    <td><input type="date"></td></tr>
-
-<tr><td><input type="submit" value="submit"></td></tr>
 </table>
+<br>
+<button type = "submit" style="font-size: 1em"; value="SUBMIT">SUBMIT</button>
 </center>
 </form>
 </body>
