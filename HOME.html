@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+
+    <style>
+        body {
+          background-color: #f7f7f7;
+          padding: 1em 2em;
+          display: flex;
+        }
+
+        h1 {
+          margin-bottom: 1rem;
+          text-align: center;
+        }
+
+        
+    </style>
+
+    <title>Welcome to GRIET</title>
+</head>
+<body>
+
+    <h1>Welcome to GRIET</h1>
+    <center>
+        <span>Email:</span>
+        <input type="email"id = 'email' name="email" required>
+
+            <span>Password:</span>
+        <input type="password" id="password" name="password" required>
+            <button type="button" onclick = "func()"style="width: 100px;" id="login">Submit</button>
+            <button type="button"  style="width: 100px;">Register</button>
+</center>
+    <script>
+        let Password = document.getElementById("password");
+        let Email = document.getElementById("email");
+        function func() {
+            window.location.href = 'assignment.html';
+        }
+
+        
+    </script>
+
+</body>
+</html>
